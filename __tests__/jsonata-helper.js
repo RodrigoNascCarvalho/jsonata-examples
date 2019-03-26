@@ -1,10 +1,9 @@
 const jsonata = require('jsonata')
-const json = require('example-json')
 
 module.exports = {
-    testJsonataExpr: (exprStr) => {
+    testJsonataExpr: (inputJson, exprStr) => {
         const expression = jsonata(exprStr)
-        const result = expression.evaluate(json)
+        const result = expression.evaluate(inputJson)
         expect(result).toMatchSnapshot()
     }
 }

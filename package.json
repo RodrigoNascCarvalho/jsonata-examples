@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:run": "npx jest",
-    "test:watch": "npx jest --watchAll",
-    "test:generate-snapshots": "npx jest --updateSnapshot"
+    "test:run": "jest",
+    "test:watch": "jest --watchAll",
+    "test:generate-snapshots": "jest --updateSnapshot"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,8 @@
     "testPathIgnorePatterns": [
       "/jsonata-helper.js"
     ]
+  },
+  "devDependencies": {
+    "jest": "^24.5.0"
   }
 }
