@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Simple query flattening of data, select colors for description 1`] = `
+Array [
+  "Purple",
+  "Orange",
+  "Blue",
+  "Black",
+  "Yellow",
+  "Green",
+]
+`;
+
+exports[`Simple query flattening of data, select only before last color 1`] = `"Yellow"`;
+
+exports[`Simple query flattening of data, select only first color 1`] = `"Purple"`;
+
+exports[`Simple query flattening of data, select only first product of each order 1`] = `
+Array [
+  Object {
+    "Description": Object {
+      "Colour": "Purple",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+    "Price": 34.45,
+    "Product Name": "Bowler Hat",
+    "ProductID": 858383,
+    "Quantity": 2,
+    "SKU": "0406654608",
+  },
+  Object {
+    "Description": Object {
+      "Colour": "Blue",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+    "Price": 34.45,
+    "Product Name": "Bowler Hat",
+    "ProductID": 858383,
+    "Quantity": 4,
+    "SKU": "040657863",
+  },
+  Object {
+    "Description": Object {
+      "Colour": "Yellow",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+    "Price": 34.45,
+    "Product Name": "Bowler Hat",
+    "ProductID": 858383,
+    "Quantity": 2,
+    "SKU": "0406654608",
+  },
+]
+`;
+
+exports[`Simple query flattening of data, select only first three colors 1`] = `
+Array [
+  "Purple",
+  "Orange",
+  "Blue",
+]
+`;
+
+exports[`Simple query flattening of data, select only last color 1`] = `"Green"`;
+
+exports[`Simple query flattening of data, select only second color 1`] = `"Orange"`;
+
+exports[`Simple query to get descriptions for each product 1`] = `
+Array [
+  Object {
+    "Colour": "Purple",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Orange",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.6,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Blue",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Black",
+    "Depth": 210,
+    "Height": 20,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Yellow",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Green",
+    "Depth": 210,
+    "Height": 100,
+    "Weight": 2,
+    "Width": 30,
+  },
+]
+`;
