@@ -19,7 +19,17 @@ test('Only return product descriptions where width is larger than height AND col
         Width > Height and Colour = 'Black'
     ]
     `)
-});
+})
+
+test('Using composition of queries, we can achieve the same result as using an AND operator', () => {
+    testJsonataExpr(inputJson, `
+    Account.Order.Product.Description[
+        (
+            Width > Height;
+            Colour = 'Black';
+        )
+    ]`)
+})
 
 test('Only return product descriptions where width is larger than height OR color is black', () => {
     testJsonataExpr(inputJson, `
@@ -38,6 +48,14 @@ test('Numeric operations on data for widths and heights resulting in array with 
         Width / Height,
         Width % Height
       ]
+    `)
+})
+
+test('You can use parenthesis to set precedence of operations', () => {
+    testJsonataExpr(inputJson, `
+    Account.Order.Product.Description.[
+        (Width + Height) * Depth
+    ]
     `)
 })
 

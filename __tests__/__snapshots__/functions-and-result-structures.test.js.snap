@@ -107,3 +107,36 @@ Array [
   },
 ]
 `;
+
+exports[`Using composition of queries, we can achieve the same result as using an AND operator 1`] = `
+Object {
+  "Colour": "Black",
+  "Depth": 210,
+  "Height": 20,
+  "Weight": 2,
+  "Width": 30,
+}
+`;
+
+exports[`You can use parenthesis to set precedence of operations 1`] = `
+Array [
+  Array [
+    105000,
+  ],
+  Array [
+    105000,
+  ],
+  Array [
+    105000,
+  ],
+  Array [
+    10500,
+  ],
+  Array [
+    105000,
+  ],
+  Array [
+    27300,
+  ],
+]
+`;
