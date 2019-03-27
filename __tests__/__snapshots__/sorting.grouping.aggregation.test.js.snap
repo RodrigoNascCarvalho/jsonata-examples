@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sorting, Grouping and Aggregation Examples SGA01: Sort descriptions by Colour name using $sort 1`] = `
+Array [
+  Object {
+    "Colour": "Black",
+    "Depth": 210,
+    "Height": 20,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Blue",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Green",
+    "Depth": 210,
+    "Height": 100,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Orange",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.6,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Purple",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Yellow",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+]
+`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA02: Sort descriptions by Colour name using order-by 1`] = `
+Array [
+  Object {
+    "Colour": "Black",
+    "Depth": 210,
+    "Height": 20,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Blue",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Green",
+    "Depth": 210,
+    "Height": 100,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Orange",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.6,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Purple",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Yellow",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+]
+`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA03: Group description by Colour 1`] = `
+Array [
+  Object {
+    "Purple": Object {
+      "Colour": "Purple",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+  },
+  Object {
+    "Orange": Object {
+      "Colour": "Orange",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.6,
+      "Width": 300,
+    },
+  },
+  Object {
+    "Blue": Object {
+      "Colour": "Blue",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+  },
+  Object {
+    "Black": Object {
+      "Colour": "Black",
+      "Depth": 210,
+      "Height": 20,
+      "Weight": 2,
+      "Width": 30,
+    },
+  },
+  Object {
+    "Yellow": Object {
+      "Colour": "Yellow",
+      "Depth": 210,
+      "Height": 200,
+      "Weight": 0.75,
+      "Width": 300,
+    },
+  },
+  Object {
+    "Green": Object {
+      "Colour": "Green",
+      "Depth": 210,
+      "Height": 100,
+      "Weight": 2,
+      "Width": 30,
+    },
+  },
+]
+`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA04: Group descriptions by Colours, add only Width, Height and Depth to result object with custom labels W, H and D 1`] = `
+Array [
+  Object {
+    "Purple": Object {
+      "D": 210,
+      "H": 200,
+      "W": 300,
+    },
+  },
+  Object {
+    "Orange": Object {
+      "D": 210,
+      "H": 200,
+      "W": 300,
+    },
+  },
+  Object {
+    "Blue": Object {
+      "D": 210,
+      "H": 200,
+      "W": 300,
+    },
+  },
+  Object {
+    "Black": Object {
+      "D": 210,
+      "H": 20,
+      "W": 30,
+    },
+  },
+  Object {
+    "Yellow": Object {
+      "D": 210,
+      "H": 200,
+      "W": 300,
+    },
+  },
+  Object {
+    "Green": Object {
+      "D": 210,
+      "H": 100,
+      "W": 30,
+    },
+  },
+]
+`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA05: Group Products by SKU, group Quantity and Price inside Array when occurences are repeated 1`] = `
+Object {
+  "040657863": Object {
+    "Price": 34.45,
+    "Quantity": 4,
+  },
+  "0406634348": Object {
+    "Price": 21.67,
+    "Quantity": 1,
+  },
+  "0406654603": Object {
+    "Price": 107.99,
+    "Quantity": 1,
+  },
+  "0406654604": Object {
+    "Price": 207.99,
+    "Quantity": 1,
+  },
+  "0406654608": Object {
+    "Price": Array [
+      34.45,
+      34.45,
+    ],
+    "Quantity": Array [
+      2,
+      2,
+    ],
+  },
+}
+`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA06: Aggregate by running sum of all product prices 1`] = `441`;
+
+exports[`Sorting, Grouping and Aggregation Examples SGA07: Aggregate by running sum of all product prices multiplied by quantity in order 1`] = `613.25`;

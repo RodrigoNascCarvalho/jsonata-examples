@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Flattening of data + concat of data into string 1`] = `
+exports[`Functions + Result Structures Examples FR01: Flattening of data + concat of data into string 1`] = `
 Array [
   "Purple:300:200:210:0.75",
   "Orange:300:200:210:0.6",
@@ -11,7 +11,67 @@ Array [
 ]
 `;
 
-exports[`Numeric operations on data for widths and heights resulting in array with all results for each Product Description 1`] = `
+exports[`Functions + Result Structures Examples FR02: Only return product descriptions where width is larger than height AND color is black 1`] = `
+Object {
+  "Colour": "Black",
+  "Depth": 210,
+  "Height": 20,
+  "Weight": 2,
+  "Width": 30,
+}
+`;
+
+exports[`Functions + Result Structures Examples FR03: Using composition of queries, we can achieve the same result as using an AND operator 1`] = `
+Object {
+  "Colour": "Black",
+  "Depth": 210,
+  "Height": 20,
+  "Weight": 2,
+  "Width": 30,
+}
+`;
+
+exports[`Functions + Result Structures Examples FR04: Only return product descriptions where width is larger than height OR color is black 1`] = `
+Array [
+  Object {
+    "Colour": "Purple",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Orange",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.6,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Blue",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+  Object {
+    "Colour": "Black",
+    "Depth": 210,
+    "Height": 20,
+    "Weight": 2,
+    "Width": 30,
+  },
+  Object {
+    "Colour": "Yellow",
+    "Depth": 210,
+    "Height": 200,
+    "Weight": 0.75,
+    "Width": 300,
+  },
+]
+`;
+
+exports[`Functions + Result Structures Examples FR05: Numeric operations on data for widths and heights resulting in array with all results for each Product Description 1`] = `
 Array [
   Array [
     500,
@@ -58,67 +118,7 @@ Array [
 ]
 `;
 
-exports[`Only return product descriptions where width is larger than height AND color is black 1`] = `
-Object {
-  "Colour": "Black",
-  "Depth": 210,
-  "Height": 20,
-  "Weight": 2,
-  "Width": 30,
-}
-`;
-
-exports[`Only return product descriptions where width is larger than height OR color is black 1`] = `
-Array [
-  Object {
-    "Colour": "Purple",
-    "Depth": 210,
-    "Height": 200,
-    "Weight": 0.75,
-    "Width": 300,
-  },
-  Object {
-    "Colour": "Orange",
-    "Depth": 210,
-    "Height": 200,
-    "Weight": 0.6,
-    "Width": 300,
-  },
-  Object {
-    "Colour": "Blue",
-    "Depth": 210,
-    "Height": 200,
-    "Weight": 0.75,
-    "Width": 300,
-  },
-  Object {
-    "Colour": "Black",
-    "Depth": 210,
-    "Height": 20,
-    "Weight": 2,
-    "Width": 30,
-  },
-  Object {
-    "Colour": "Yellow",
-    "Depth": 210,
-    "Height": 200,
-    "Weight": 0.75,
-    "Width": 300,
-  },
-]
-`;
-
-exports[`Using composition of queries, we can achieve the same result as using an AND operator 1`] = `
-Object {
-  "Colour": "Black",
-  "Depth": 210,
-  "Height": 20,
-  "Weight": 2,
-  "Width": 30,
-}
-`;
-
-exports[`You can use parenthesis to set precedence of operations 1`] = `
+exports[`Functions + Result Structures Examples FR06: You can use parenthesis to set precedence of operations 1`] = `
 Array [
   Array [
     105000,

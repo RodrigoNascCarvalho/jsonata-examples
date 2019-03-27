@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:run": "jest",
+    "test": "jest",
+    "test:spec": "DEBUG=true jest -t",
     "test:watch": "jest --watchAll",
     "test:generate-snapshots": "jest --updateSnapshot"
   },
